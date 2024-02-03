@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS ALGO CAFE Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .cuisine-container {
+            margin: 20px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .cuisine {
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .cuisine:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cuisine img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cuisine p {
+            padding: 10px;
+            margin: 0;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .explore-more-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            display: block;
+            /* transition: background-color 0.3s, color 0.3s; */
+        }
+
+        .explore-more-btn:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .menu-container {
+            clear: both;
+            padding: 20px;
+            display: none;
+            text-align: center;
+            margin-top: 20px; /* Added space between cuisine and menu container */
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 200px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-description {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .menu-container:target {
+            display: block;
+        }
+
+        .cuisine-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BITS ALGO CAFE</h1>
+    </header>
+
+    <div class="cuisine-container">
+        <a href="#indian-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?indian-food" alt="Indian Cuisine">
+            <p>Indian Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+
+        <a href="#italian-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?italian-food" alt="Italian Cuisine">
+            <p>Italian Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+
+        <a href="#chinese-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?chinese-food" alt="Chinese Cuisine">
+            <p>Chinese Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+
+        <a href="#mexican-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?mexican-food" alt="Mexican Cuisine">
+            <p>Mexican Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+
+        <a href="#japanese-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?japanese-food" alt="Japanese Cuisine">
+            <p>Japanese Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+
+        <a href="#mediterranean-menu" class="cuisine">
+            <img src="https://source.unsplash.com/400x250/?mediterranean-food" alt="Mediterranean Cuisine">
+            <p>Mediterranean Cuisine</p>
+            <span class="explore-more-btn">Explore More</span>
+        </a>
+        <!-- Add more cuisine categories as needed -->
+    </div>
+
+    <div id="indian-menu" class="menu-container">
+        <div class="cuisine-name">Indian Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?biryani" alt="Biryani">
+            <p>Biryani</p>
+            <p class="menu-description">A flavorful and aromatic rice dish with tender meat or vegetables.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?butter-chicken" alt="Butter Chicken">
+            <p>Butter Chicken</p>
+            <p class="menu-description">Tender chicken cooked in a rich and creamy tomato-based sauce.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?paneer-tikka" alt="Paneer Tikka">
+            <p>Paneer Tikka</p>
+            <p class="menu-description">Marinated and grilled Indian cottage cheese served with mint chutney.</p>
+        </div>
+        <!-- Add more Indian dishes as needed -->
+    </div>
+
+    <div id="italian-menu" class="menu-container">
+        <div class="cuisine-name">Italian Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?margherita-pizza" alt="Margherita Pizza">
+            <p>Margherita Pizza</p>
+            <p class="menu-description">Classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?pasta-carbonara" alt="Pasta Carbonara">
+            <p>Pasta Carbonara</p>
+            <p class="menu-description">Spaghetti with a creamy sauce made with eggs, cheese, pancetta, and pepper.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?tiramisu" alt="Tiramisu">
+            <p>Tiramisu</p>
+            <p class="menu-description">Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+        </div>
+        <!-- Add more Italian dishes as needed -->
+    </div>
+
+    <div id="chinese-menu" class="menu-container">
+        <div class="cuisine-name">Chinese Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?sweet-and-sour-chicken" alt="Sweet and Sour Chicken">
+            <p>Sweet and Sour Chicken</p>
+            <p class="menu-description">Crispy fried chicken tossed in a tangy and sweet sauce with colorful vegetables.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?kung-pao-shrimp" alt="Kung Pao Shrimp">
+            <p>Kung Pao Shrimp</p>
+            <p class="menu-description">Shrimp stir-fried with peanuts, vegetables, and chili peppers in a flavorful sauce.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?vegetable-spring-rolls" alt="Vegetable Spring Rolls">
+            <p>Vegetable Spring Rolls</p>
+            <p class="menu-description">Crispy spring rolls filled with a mix of fresh vegetables and served with dipping sauce.</p>
+        </div>
+        
+    </div>
+
+    <div id="mexican-menu" class="menu-container">
+        <div class="cuisine-name">Mexican Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?tacos" alt="Tacos">
+            <p>Tacos</p>
+            <p class="menu-description">Soft or crispy tortillas filled with seasoned meat, salsa, and various toppings.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?quesadillas" alt="Quesadillas">
+            <p>Quesadillas</p>
+            <p class="menu-description">Tortillas filled with cheese, meat, and other ingredients, grilled to perfection.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?guacamole" alt="Guacamole">
+            <p>Guacamole</p>
+            <p class="menu-description">A delicious dip made from mashed avocados, tomatoes, onions, and spices.</p>
+        </div>
+        
+    </div>
+
+    <div id="japanese-menu" class="menu-container">
+        <div class="cuisine-name">Japanese Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?sushi" alt="Sushi">
+            <p>Sushi</p>
+            <p class="menu-description">Various bite-sized portions of vinegared rice, raw or cooked seafood, and vegetables.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?ramen" alt="Ramen">
+            <p>Ramen</p>
+            <p class="menu-description">Japanese noodle soup dish with Chinese-style wheat noodles served in a meat or fish-based broth.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?tempura" alt="Tempura">
+            <p>Tempura</p>
+            <p class="menu-description">Battered and deep-fried seafood and vegetables.</p>
+        </div>
+       
+    </div>
+
+    <div id="mediterranean-menu" class="menu-container">
+        <div class="cuisine-name">Mediterranean Cuisine</div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?hummus" alt="Hummus">
+            <p>Hummus</p>
+            <p class="menu-description">A thick spread made from mashed chickpeas, tahini, lemon, and garlic.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?falafel" alt="Falafel">
+            <p>Falafel</p>
+            <p class="menu-description">Deep-fried balls made from ground chickpeas, fava beans, or both.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/200x150/?tabbouleh" alt="Tabbouleh">
+            <p>Tabbouleh</p>
+            <p class="menu-description">A Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, onion, and soaked bulgur.</p>
+        </div>
+        <!-- Add more Mediterranean dishes as needed -->
+    </div>
+
+    <!-- Add more menu containers for other cuisines -->
+</body>
+
+</html>
